@@ -1,4 +1,4 @@
-#### LEARNING C (Again)
+# GETTING CRACKED AT C
 
 -   I am trying to take a different route to learning C; I've decided I was going to learn C as I have other languages; through actually doing.
 
