@@ -22,7 +22,7 @@ int main() {
         printf("Would you like to add a task? [y/n?]");
         scanf("%d", yesOrNo);
         addTask = yesOrNo == 'y' || yesOrNo == 'y';
-    } while (addTask)
+    } while (addTask);
     
     return 0;
 }
