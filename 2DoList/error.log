@@ -1,13 +1,16 @@
-todo.c:126:29: error: call to undeclared function 'get_part_num'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
-  126 |         char *part_num[4] = get_part_num(&token);
+todo.c:44:42: error: incompatible pointer to integer conversion passing 'void *' to parameter of type 'int' [-Wint-conversion]
+   44 |         struct Task *nTask = create_task(NULL, temp_name, temp_desc, temp_completed);
+      |                                          ^~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h:49:15: note: expanded from macro 'NULL'
+   49 | #define NULL  __DARWIN_NULL
+      |               ^~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types.h:64:23: note: expanded from macro '__DARWIN_NULL'
+   64 | #define __DARWIN_NULL ((void *)0)
+      |                       ^~~~~~~~~~~
+todo.c:22:29: note: passing argument to parameter here
+   22 | struct Task *create_task(int, char*, char*, bool);
       |                             ^
-todo.c:126:15: error: array initializer must be an initializer list
-  126 |         char *part_num[4] = get_part_num(&token);
-      |               ^
-todo.c:128:17: warning: cast to smaller integer type 'char' from 'char *' [-Wpointer-to-int-cast]
-  128 |         switch ((char)part_num[1])
-      |                 ^~~~~~~~~~~~~~~~~
-todo.c:131:13: error: call to undeclared function 'copy_without_number'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
-  131 |             copy_without_number(&temp_name, &token, NAME_LIMIT);
-      |             ^
-1 warning and 3 errors generated.
+todo.c:47:95: error: use of undeclared identifier 'newTask'
+   47 |         printf("Task\n----\nname: %s\ndescription: %s\ncompleted: %s", temp_name, temp_desc, (newTask.is_completed ? "X\n" : "\n"));
+      |                                                                                               ^
+2 errors generated.
