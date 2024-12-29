@@ -1,11 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
+#define MAX 100
+typedef struct {
+    char string[MAX];
+} line;
+
+typedef struct {
+    line lines[MAX];
+} document;
 
 int main(void) {
+    
+
     FILE *fptr;
     // opening a file to append end of file: "a":
-    fptr = fopen("data.txt", "a");
+    fptr = fopen("data.txt", "a+");
     if (fptr == NULL) {
         printf("Error opening file!\n");
         return 1;
@@ -14,20 +25,32 @@ int main(void) {
 
     // printing to output with file print format:
     fprintf(fptr, "\nHello!");
-    // Must closed file when finished:
+    rewind(fptr);
+    // fclose(fptr);
+
+    // fptr = fopen("data.txt", "r");
+
+    // if (fptr == NULL) {
+    //     printf("Error opening file\n");
+    //     return 1;
+    // }
+
+    document doc;
+    for (int i = 0; i < MAX; i++) {
+        if(fgets(doc.lines->string, 10, fptr)) {
+
+            printf("%d. %s", i+1, doc.lines->string);
+        }
+    }
+    // while ( != NULL) {
+    //     printf("%s", line);
+    // }
     fclose(fptr);
 
-    FILE *file = fopen("example.txt", "a+");
-    if(file == NULL) {
-        printf("Error opening file\n");
-        return 1;
-    }
+    int i = 4;
+    int* p = &i;
+    printf("%p\n", (void*)p);
 
-    char line[100];
-    while (fgets(line, sizeof(line), file)) {
-        printf("%s", line);
-    }
-    fclose(file);
     return 0;
 }
 

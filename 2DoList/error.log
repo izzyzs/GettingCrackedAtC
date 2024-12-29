@@ -1,0 +1,13 @@
+todo.c:126:29: error: call to undeclared function 'get_part_num'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  126 |         char *part_num[4] = get_part_num(&token);
+      |                             ^
+todo.c:126:15: error: array initializer must be an initializer list
+  126 |         char *part_num[4] = get_part_num(&token);
+      |               ^
+todo.c:128:17: warning: cast to smaller integer type 'char' from 'char *' [-Wpointer-to-int-cast]
+  128 |         switch ((char)part_num[1])
+      |                 ^~~~~~~~~~~~~~~~~
+todo.c:131:13: error: call to undeclared function 'copy_without_number'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  131 |             copy_without_number(&temp_name, &token, NAME_LIMIT);
+      |             ^
+1 warning and 3 errors generated.
