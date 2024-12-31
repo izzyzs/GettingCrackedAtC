@@ -1,16 +1,4 @@
-todo.c:44:42: error: incompatible pointer to integer conversion passing 'void *' to parameter of type 'int' [-Wint-conversion]
-   44 |         struct Task *nTask = create_task(NULL, temp_name, temp_desc, temp_completed);
-      |                                          ^~~~
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h:49:15: note: expanded from macro 'NULL'
-   49 | #define NULL  __DARWIN_NULL
-      |               ^~~~~~~~~~~~~
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types.h:64:23: note: expanded from macro '__DARWIN_NULL'
-   64 | #define __DARWIN_NULL ((void *)0)
-      |                       ^~~~~~~~~~~
-todo.c:22:29: note: passing argument to parameter here
-   22 | struct Task *create_task(int, char*, char*, bool);
-      |                             ^
-todo.c:47:95: error: use of undeclared identifier 'newTask'
-   47 |         printf("Task\n----\nname: %s\ndescription: %s\ncompleted: %s", temp_name, temp_desc, (newTask.is_completed ? "X\n" : "\n"));
-      |                                                                                               ^
-2 errors generated.
+todo.c:129:16: error: incompatible integer to pointer conversion assigning to 'int *' from 'char' [-Wint-conversion]
+  129 |       temp_num = num_c;
+      |                ^ ~~~~~
+1 error generated.
