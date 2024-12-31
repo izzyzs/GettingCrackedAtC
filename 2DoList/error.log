@@ -1,4 +1,0 @@
-todo.c:129:16: error: incompatible integer to pointer conversion assigning to 'int *' from 'char' [-Wint-conversion]
-  129 |       temp_num = num_c;
-      |                ^ ~~~~~
-1 error generated.
