@@ -6,4 +6,4 @@
 
 *   1. I asked ChatGPT to make a list of projects from beginner to mastery; you can find that here [Project List](./Project%20List.md)
 *   2. No tutorials, just use my brain
-*   3. No AI, I can only use it for syntax related issues
+*   3. No AI, I can only use it for syntax related issues and for picking my brain.
