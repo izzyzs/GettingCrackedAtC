@@ -1,12 +1,16 @@
 # GETTING CRACKED AT C
 
 -   I am trying to take a different route to learning C; I've decided I was going to learn C as I have other languages; through actually doing.
--   I haven't gotten an internship im ny 4 years of college and now that I graduated, the fear of not getting hired is starting to settle. Instead of sitting around and being complacent, I want to develop my skills as a programmer so that I can one day play the role of an irreplaceable asset. And the first step of that is refusing to not understand things deeply so because of that I'm taking a different route to learning C:
+-   I haven't gotten an internship im ny 4 years of college and now that I graduated, the fear of not getting hired is starting to settle. Instead of sitting around and being complacent, I want to develop my skills as a programmer so that I have high value skills. And the first step of that is refusing to not understand things deeply so because of that I'm taking a different route to learning C:
 
     *   I asked ChatGPT to make a list of projects from beginner to mastery; you can the details below.
     *   No tutorials (for the project), just use my brain.
     *   No copying other implementations, I can only read what other's did for inspiration.
     *   No AI, I can only use it for syntax related issues and for picking apart my ideas.
+
+## Edit: May 18, 2025
+
+I've come to the realization that alongside learning C, it's crucial that I go deeper with regards to my understanding of Computer Systems and Architecture, so I've decided to self study CS:APP and I plan to do a quick run through of "Computer Organization and Architecture," a textbook thaht I used in my Computer Architecture class. Simultaneously, I want to go through grokking algorithms then go into Neetcode's roadmap. If I can master the essence of computer architecture and have the applicable skills with regards to using my understanding of computer architecture to write truly efficient, beautiful code and understand what's happening behind the hood, and on top of that be able to build out the necessary data structures required to build these lower level functionalities into the computer, I will have attained essential knowledge of computer science, allowing me to branch out in any direction I want to.
 ---
 ## What I've Decided to Complete
 

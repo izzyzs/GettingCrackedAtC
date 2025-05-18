@@ -8,6 +8,14 @@
 #define INT_NULL 0
 #define LONGEST 226
 
+// NEXT TASKS
+// 1> work on update and delete functionality
+// BUG: get line number has to be able to handle
+// multi-digit line numbers; once you get past 9;
+// the first digit is 1 meaning that it will return
+// 1 instead of ten and the same follows for 100 and
+// other numbers
+
 struct Task {
     int task_num;
     char name[NAME_LIMIT];
